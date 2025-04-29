@@ -1,7 +1,5 @@
 # BAE 305 Final Project: Foamtastic
-
 ***
-
 - Megan Fister
 - Audrey Suit
 - Shika Uppala
