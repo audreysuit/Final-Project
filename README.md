@@ -27,3 +27,11 @@ Our project is an automated cold-foam dispensing system designed to streamline a
 - 10kΩ Resistor (for button pull-down)
 - USB Cable (for Arduino programming and serial monitoring)
 - Power distribution wires and common ground connections
+
+# Testing Description
+
+# Design Decision Discussion
+
+# Test Results Discussion
+
+# Results
