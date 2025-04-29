@@ -32,6 +32,4 @@ Our project is an automated cold-foam dispensing system designed to streamline a
 
 # Design Decision Discussion
 
-# Test Results Discussion
-
-# Results
+# Test Results
