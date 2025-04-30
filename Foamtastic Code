@@ -1,0 +1,134 @@
+#include <Servo.h>
+
+// Sensor
+const int sensorPin = A0;
+const int threshold = 900;
+bool systemHasRun = false;  // prevents repeat runs
+
+// Pumps
+//const int pump1Pin = 2;
+const int pump2Pin = 3;
+
+// L9110S Stepper
+int IN1 = 8;
+int IN2 = 9;
+int IN3 = 10;
+int IN4 = 11;
+int step_delay = 2;
+int steps_per_move = 3850;
+int steps_to_top_and_bottom = steps_per_move;
+
+// Servos
+Servo servo1; // rotates 90°
+Servo servo2; // rotates 120°
+const int servo1Pin = 5;
+const int servo2Pin = 6;
+
+void setup() {
+  Serial.begin(9600);
+
+  // Let power stabilize before attaching servos
+  delay(500);
+
+  // Sensor
+  pinMode(sensorPin, INPUT);
+
+  // Pumps
+  //pinMode(pump1Pin, OUTPUT);
+  pinMode(pump2Pin, OUTPUT);
+  //digitalWrite(pump1Pin, LOW);
+  digitalWrite(pump2Pin, LOW);
+
+  // Stepper
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+
+  // Servos initialized to 0° and then detached to prevent twitch
+  servo1.attach(servo1Pin);
+  servo1.write(0);
+  delay(500);
+  servo1.detach();
+
+  servo2.attach(servo2Pin);
+  servo2.write(0);
+  delay(500);
+  servo2.detach();
+}
+
+void loop() {
+  int sensorValue = analogRead(sensorPin);
+  Serial.println(sensorValue);
+
+  if (!systemHasRun && sensorValue < threshold) {
+    systemHasRun = true;
+
+    // STEP 1: Turn on both pumps for 5 seconds
+    //digitalWrite(pump1Pin, HIGH);
+    digitalWrite(pump2Pin, HIGH);
+    delay(5000);
+    //digitalWrite(pump1Pin, LOW);
+    digitalWrite(pump2Pin, LOW);
+
+    // STEP 2: Move stepper motor down
+    stepBackward(steps_to_top_and_bottom);
+    delay(2000);
+
+    // STEP 3: Servo 1 to 90° for 5 seconds, then back to 0°
+    servo1.attach(servo1Pin);
+    servo1.write(90);
+    delay(5000);
+    servo1.write(0);
+    delay(500);
+    servo1.detach();
+
+    // STEP 4: Move stepper back up
+    stepForward(steps_to_top_and_bottom);
+    delay(500);
+
+    // STEP 5: Servo 2 to 120° for 5 seconds, then back to 0°
+    servo2.attach(servo2Pin);
+    servo2.write(120);
+    delay(5000);
+    servo2.write(0);
+    delay(500);
+    servo2.detach();
+  }
+}
+
+// Stepper movement functions
+void stepForward(int steps) {
+  for (int i = 0; i < steps; i++) {
+    stepMotor(3 - (i % 4));
+    delay(step_delay);
+  }
+}
+
+void stepBackward(int steps) {
+  for (int i = 0; i < steps; i++) {
+    stepMotor(i % 4);
+    delay(step_delay);
+  }
+}
+
+void stepMotor(int step) {
+  switch (step) {
+    case 0:
+      digitalWrite(IN1, HIGH); digitalWrite(IN2, LOW);
+      digitalWrite(IN3, HIGH); digitalWrite(IN4, LOW);
+      break;
+    case 1:
+      digitalWrite(IN1, LOW); digitalWrite(IN2, HIGH);
+      digitalWrite(IN3, HIGH); digitalWrite(IN4, LOW);
+      break;
+    case 2:
+      digitalWrite(IN1, LOW); digitalWrite(IN2, HIGH);
+      digitalWrite(IN3, LOW); digitalWrite(IN4, HIGH);
+      break;
+    case 3:
+      digitalWrite(IN1, HIGH); digitalWrite(IN2, LOW);
+      digitalWrite(IN3, LOW); digitalWrite(IN4, HIGH);
+      break;
+  }
+}
