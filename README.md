@@ -28,6 +28,12 @@ Our project is an automated cold-foam dispensing system designed to streamline a
 - USB Cable (for Arduino programming and serial monitoring)
 - Power distribution wires and common ground connections
 
+### Physical Design
+
+The design flow starts with an analog reflectance sensor nested in a cup-shaped cutout in the baseplate. When a cup is placed on the sensor, the pump system is activated. A submersible pump submerged in a tank pumps cream through plastic tubing into the mixing cup. The mixing cup is mounted to a servo motor, which is attached to a wooden post. Also attached to the post is stepper motor-driven linear rail, which moves the zip-tied milk frother up and down into the cup. After being lowered into the mixing cup, another servo glued to the top of the frother pushes down onto the button, causing it to run and froth the cream. After the cream has been frothed, the frother is moved back to the top. The servo attached to the mixing cup rotates, pouring the cold foam into the starting coffee cup. 
+
+
+
 # Testing Description
 
 # Design Decision Discussion
