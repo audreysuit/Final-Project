@@ -35,7 +35,7 @@ Our project is an automated cold-foam dispensing system designed to streamline a
 ## Frame
 The frame of our system is straightforward yet functional. We started with a square wooden base and mounted a thicker vertical wooden slab onto it. This vertical support holds the frother and the cup used for mixing and dispensing the cold foam. Adjacent to the vertical slab, we added a thinner wooden platform with a hole drilled in its center. The sensor is placed in this hole, and when a coffee mug is set on top, it covers the hole and activates the system by triggering the sensor.
 
-https://github.com/audreysuit/Final-Project/blob/main/Foamtastic%20Frame.jpg?raw=true
+![Frame](https://github.com/audreysuit/Final-Project/blob/main/Foamtastic%20Frame.jpg)
 
 ### Physical Design
 
