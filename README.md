@@ -70,7 +70,8 @@ The frother needed an easily pressed top button. At first, the servo wasn't stro
 
 ### Pump
 
-Our first choice for a pump was a peristaltic pump, but we wouldn't have gotten the part in time, so we went with a submersible pump. This wasn't ideal, since the pump is typically intended for water and our system uses a thicker and harder to clean fluid: half and half. The pump
+Our first choice for a pump was a peristaltic pump, but we wouldn't have gotten the part in time, so we went with a submersible pump. This wasn't ideal, since the pump is typically intended for water and our system uses a thicker and harder to clean fluid: half and half. The pump had to be elevated a few inches to push the cream through, but responds quickly and with stability.
+
 
 # Testing Description
 ## System Functionality
