@@ -55,10 +55,15 @@ https://github.com/audreysuit/Final-Project/blob/e46cff29bf43b364e0ddb217e105591
 
 ![image](https://github.com/user-attachments/assets/1386f666-135a-4ec8-a411-12efd97bb55d)
 
-Assembly began with the wooden base described in the previous "Frame" section. We attached the linear rail to the wooden post and the frother to the linear rail using zip ties (1). We elevated the cream tank and zip-tied the tubing to the post (2), pointing into the mixing cup. The mixing cup was trimmed to size to fit the system. Below the tubing outlet, we drilled a small block of wood to the post and zip-tied a servo to the block (3). The servo is hot-glued and zip-tied to the mixing cup for ensured support and stability. The analog reflectance sensor nested in the cupholder is seen in (4). We used tape to secure the sensor and its wiring. The circuit board is elevated and placed on the back of the board behind the post.
+Assembly began with the wooden base described in the previous "Frame" section. We attached the linear rail to the wooden post and the frother to the linear rail using zip ties (1). We elevated the cream tank and zip-tied the tubing to the post (2), pointing into the mixing cup. The mixing cup was trimmed to size to fit the system.  Below the tubing outlet, we drilled a small block of wood to the post and zip-tied a servo to the block (3). The servo is hot-glued and zip-tied to the mixing cup for ensured support and stability. The frother button pushing servo was attached to the frother using hot glue. The analog reflectance sensor nested in the cupholder is seen in (4). We used tape to secure the sensor and its wiring. The circuit board is elevated and placed on the back of the board behind the post.
 
 
 # Design Decision Discussion
+
+### Frame
+
+We initially considered using perforated metal sheets and rods to assemble the frame. After a discussion with Dr. Jarros, he informed us that this would be quite expensive and heavy, and recommended we use wood instead. By using wood, we were able to use pieces from former 305 projects and receive great assistance from Dr. Jarros. It was easy to size exactly what we needed by sawing pieces and simply drilling them together. The cupholder plate was from a previous project and already had a hole in it, so it was perfect and easy to integrate. We added the extra piece of wood to the top of the post because the frother needed to sit farther away from the post to lower into the cup properly. 
+
 
 
 # Testing Description
