@@ -17,18 +17,18 @@ Our project is an automated cold-foam dispensing system designed to streamline a
 - 1x L9110S Dual Motor Driver Module
 - 1x DC 5V–12V 2-Phase 4-Wire Stepper Motor Linear Rail (90 mm stroke) – lowers and lifts the frother into/from the cup
 - 2x Servo Motors (SG90) -  One to tilt the plastic cup and pour foam into the coffee, one to press the button on the handheld frother to turn it on
-- QRE1113 Analog Line Sensor - detects when a coffee mug is placed and starts the system
-- External battery pack (3 batteries) – to avoid underpowering components
-- G4PB4R – 4-Channel Output Module Rack – to separate logic and power circuits via opto-isolation
+- 1x QRE1113 Analog Line Sensor - detects when a coffee mug is placed and starts the system
+- 1x External battery pack (Three 1.5 V batteries) – to avoid underpowering components
+- 1x G4PB4R – 4-Channel Output Module Rack – to separate logic and power circuits via opto-isolation
 - Plastic tubing – to direct the liquid from the pump to the frothing cup
-- Plastic cup (frothing container) – holds milk and syrup for frothing
+- 1x Plastic cup (frothing container) – holds milk and syrup for frothing
 - Breadboard and Jumper Wires – for connecting and prototyping the circuit
-- Handheld frother – creates cold foam from the milk/syrup mixture
+- 1x Handheld frother – creates cold foam from the milk/syrup mixture
 - Zipties – for securing components like the frother to the actuator and cup to servos
 - Mounting brackets / frame materials (wood, acrylic, or 3D printed) – for structural support and alignment of components
-- Coffee mug – where the final drink is prepared
+- 1x Coffee mug – where the final drink is prepared
 - Milk and syrup mixture – for creating cold foam
-- USB Cable (for Arduino programming and serial monitoring)
+- 1x USB Cable (for Arduino programming and serial monitoring)
 - Power distribution wires and common ground connections
 
 
