@@ -53,6 +53,9 @@ https://github.com/audreysuit/Final-Project/blob/e46cff29bf43b364e0ddb217e105591
 
 ### Assembly
 
+![image](https://github.com/user-attachments/assets/1386f666-135a-4ec8-a411-12efd97bb55d)
+
+
 Assembly began with the wooden base described in the previous "Frame" section. We attached the linear rail to the wooden post and the frother to the linear rail using zip ties. Below the frother
 
 
