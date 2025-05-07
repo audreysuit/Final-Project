@@ -68,7 +68,9 @@ We initially considered using perforated metal sheets and rods to assemble the f
 
 The frother needed an easily pressed top button. At first, the servo wasn't strong enough to push the button and power the frother. Dr. Jarros helped us take it apart, and we ended up removing the spring that was giving resistance to the button. By removing the spring, the servo was able to turn the frother on. Looking at servo specifics, we decided to attach the servo to the frother itself, rather than at the top of the rail. Using hot glue was effective and ensured the servo would never miss the button.
 
+### Pump
 
+Our first choice for a pump was a peristaltic pump, but we wouldn't have gotten the part in time, so we went with a submersible pump. This wasn't ideal, since the pump is typically intended for water and our system uses a thicker and harder to clean fluid: half and half. The pump
 
 # Testing Description
 ## System Functionality
