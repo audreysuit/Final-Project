@@ -11,22 +11,31 @@ Our project is an automated cold-foam dispensing system designed to streamline a
 # Design Description
 
 ### Materials
-
-- Arduino Uno
+- Arduino Uno – for controlling the system components
 - 1x QRE1113 Analog Reflectance Sensor
-- 1x 3.3V Submersible Pump
-- 1x NPN Transistor (e.g., 2N2222 or TIP120)
-- 2x 1kΩ Resistors (for transistor bases)
-- 2x Flyback Diodes (e.g., 1N4001 or 1N4007)
+- 1x 3–5V DC Micro Submersible Mini Water Pump – pumps the milk/syrup mixture into the frothing cup
 - 1x L9110S Dual Motor Driver Module
-- 1x 4-wire Stepper Motor with Lead Screw Linear Rail
-- 2x Servo Motors (e.g., MG90S or SG90)
-- External 3.3V Power Supply or Buck Converter
-- Breadboard and Jumper Wires
-- Pushbutton (for manual pump control testing)
-- 10kΩ Resistor (for button pull-down)
+- 1x DC 5V–12V 2-Phase 4-Wire Stepper Motor Linear Rail (90 mm stroke) – lowers and lifts the frother into/from the cup
+- 2x Servo Motors (SG90) -  One to tilt the plastic cup and pour foam into the coffee, one to press the button on the handheld frother to turn it on
+- QRE1113 Analog Line Sensor - detects when a coffee mug is placed and starts the system
+- External battery pack (3 batteries) – to avoid underpowering components
+- G4PB4R – 4-Channel Output Module Rack – to separate logic and power circuits via opto-isolation
+- Plastic tubing – to direct the liquid from the pump to the frothing cup
+- Plastic cup (frothing container) – holds milk and syrup for frothing
+- Breadboard and Jumper Wires – for connecting and prototyping the circuit
+- Handheld frother – creates cold foam from the milk/syrup mixture
+- Zipties – for securing components like the frother to the actuator and cup to servos
+- Mounting brackets / frame materials (wood, acrylic, or 3D printed) – for structural support and alignment of components
+- Coffee mug – where the final drink is prepared
+- Milk and syrup mixture – for creating cold foam
 - USB Cable (for Arduino programming and serial monitoring)
 - Power distribution wires and common ground connections
+
+
+## Frame
+The frame of our system is straightforward yet functional. We started with a square wooden base and mounted a thicker vertical wooden slab onto it. This vertical support holds the frother and the cup used for mixing and dispensing the cold foam. Adjacent to the vertical slab, we added a thinner wooden platform with a hole drilled in its center. The sensor is placed in this hole, and when a coffee mug is set on top, it covers the hole and activates the system by triggering the sensor.
+
+
 
 ### Physical Design
 
