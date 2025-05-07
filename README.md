@@ -6,7 +6,7 @@
 
  # Summary
   
-Our project is an automated cold-foam dispensing system designed to streamline a key step in specialty coffee preparation. The machine operates with minimal user input, requiring only the placement of a coffee cup on a sensor pad and occasional refilling of cream and syrup reservoirs. Once the cup is detected by an analog QRE1113 reflectance sensor, the system initiates a sequence that first dispenses syrup and cream through two 3.3V submersible pumps. Next, a stepper-motor-driven linear rail lowers a milk frother into the cup. A servo motor activates the frother, which prepares cold foam directly inside the cup. After frothing, the rail returns the frother to its original position, and a second servo can perform a follow-up action, such as dispensing or completing the foam layer. The system is designed for consistency, ease of use, and hands-free operation, demonstrating how automation can improve efficiency and reduce labor demands in beverage preparation.
+Our project is an automated cold-foam dispensing system designed to streamline a key step in specialty coffee preparation. The machine operates with minimal user input, requiring only the placement of a coffee cup on a sensor pad and occasional refilling of cream and syrup reservoirs. Once the cup is detected by an analog QRE1113 reflectance sensor, the system initiates a sequence that first dispenses syrup and cream through a 3.3V submersible pump. Next, a stepper-motor-driven linear rail lowers a milk frother into the cup. A servo motor activates the frother, which prepares cold foam directly inside the cup. After frothing, the rail returns the frother to its original position, and a second servo can perform a follow-up action, such as dispensing or completing the foam layer. The system is designed for consistency, ease of use, and hands-free operation, demonstrating how automation can improve efficiency and reduce labor demands in beverage preparation.
 
 # Design Description
 
@@ -45,9 +45,18 @@ The design flow starts with an analog reflectance sensor nested in a cup-shaped 
 
 Add description of wiring and parts, photos of the circuit, and potentially schematics.
 
+# Design Decision Discussion
+
 
 # Testing Description
+## System Functionality
+When a mug is placed over the reflectance sensor, the system is activated. First, the pump turns on and pumps the cream and syrup mixture into the mixing cup for 5 seconds. Next, the stepper motor linear rail lowers the frother into the cup. Once the frother reaches the bottom, a servo motor mounted on top of it activates after a short delay, pressing the frother's power button and running it for 10 seconds to create a cold foam consistency. Finally, another servo motor rotates the mixing cup over the mug, allowing the cold foam to pour onto the coffee, then returns the cup to its original position.
 
-# Design Decision Discussion
+## Mechanical Limitations
+After repeated use over several days, the plastic mount on the stepper motor linear rail began to wear down due to the weight of the frother. The friction between the rail’s metal components and the plastic attachment caused gradual degradation, eventually preventing the actuator from fully lifting the frother without additional support from below.
+
+## Design Enhancements
+This issue could be addressed by upgrading to more durable, higher quality components such as metal mounts or a more robust linear actuator to better handle the mechanical stress and extend the system's lifespan.
+
 
 # Test Results
