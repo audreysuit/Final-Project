@@ -55,8 +55,7 @@ https://github.com/audreysuit/Final-Project/blob/e46cff29bf43b364e0ddb217e105591
 
 ![image](https://github.com/user-attachments/assets/1386f666-135a-4ec8-a411-12efd97bb55d)
 
-
-Assembly began with the wooden base described in the previous "Frame" section. We attached the linear rail to the wooden post and the frother to the linear rail using zip ties. Below the frother
+Assembly began with the wooden base described in the previous "Frame" section. We attached the linear rail to the wooden post and the frother to the linear rail using zip ties (1). We elevated the cream tank and zip-tied the tubing to the post (2), pointing into the mixing cup. Below the tubing, we drilled a small block of wood to the post and zip tied a servo to the block (3). The servo is hot glued and zip tied to the mixing cup for ensured support. The analog reflectance sensor nested in the cupholder is seen in (4). The circuit is elevated and placed on the back of the board behind the post.
 
 
 # Design Decision Discussion
