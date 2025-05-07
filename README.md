@@ -45,6 +45,17 @@ The design flow starts with an analog reflectance sensor nested in a cup-shaped 
 
 Add description of wiring and parts, photos of the circuit, and potentially schematics.
 
+### Code
+
+The code for this project can be viewed using the link below. This script is intended to be run in the Arduino IDE software. There are comments within the code describing the purpose of each line.
+
+https://github.com/audreysuit/Final-Project/blob/e46cff29bf43b364e0ddb217e1055918d41da11a/Foamtastic%20Code
+
+### Assembly
+
+Assembly began with the wooden base described in the previous "Frame" section. We attached the linear rail to the wooden post and the frother to the linear rail using zip ties. Below the frother
+
+
 # Design Decision Discussion
 
 
