@@ -43,6 +43,32 @@ The design flow starts with an analog reflectance sensor nested in a cup-shaped 
 
 ### Circuits
 
+The cold foam dispensing system integrates various electronic components to automate the mixing and dispensing of cold foam onto a coffee beverage. The main control board is a SparkFun RedBoard, mounted on a prototyping base along with a solderless breadboard for circuit prototyping.
+
+Circuit Components and Configuration:
+1.	Microcontroller (SparkFun RedBoard)
+o	Acts as the central control unit.
+o	Powered via USB and connected to various digital I/O pins.
+2.	Analog Reflectance Sensor
+o	Mounted at the base of the platform to detect the presence of a coffee mug.
+o	When a cup is detected, it signals the RedBoard to initiate the sequence.
+3.	Mini Submersible Water Pump
+o	Powered via a digital output pin (likely through a transistor for sufficient current drive).
+o	Draws milk or syrup from a reservoir through clear tubing into the mixing cup.
+4.	Stepper Motor + Linear Rail Assembly
+o	A stepper motor is used to raise and lower the mixing cup (likely the one holding milk and syrup).
+o	The movement is controlled through a motor driver circuit wired on the breadboard.
+5.	Foam Frother Motor
+o	Mounted vertically on a wooden post.
+o	Controlled via the RedBoard, it rotates a whisk to froth the liquid in the mixing cup.
+6.	Servo Motor (Not directly shown, may be part of rail or dispensing arm)
+o	Used to rotate the arm or cup back to its original position after frothing is complete.
+7.	Power and Wiring
+o	Jumper wires connect all components to the RedBoard and breadboard.
+o	Power is supplied to components via 5V and GND rails.
+o	Control signals run from the RedBoard’s digital pins to the motor driver, pump, and sensors.
+
+
 Add description of wiring and parts, photos of the circuit, and potentially schematics.
 
 ### Code
