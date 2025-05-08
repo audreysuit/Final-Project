@@ -87,5 +87,6 @@ After repeated use over several days, the plastic mount on the stepper motor lin
 This issue could be addressed by upgrading to more durable, higher quality components such as metal mounts or a more robust linear actuator to better handle the mechanical stress and extend the system's lifespan.
 
 # Test Results Discussion
+To beging our testing, we assembled each piece to the Arduino and wrote a code with the help of Chat GPT and tested it so that it could perform the task on its own. We then assembled everything together 
 
 # Test Results
