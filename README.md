@@ -79,36 +79,36 @@ An analog reflectance sensor was also recommended by Dr. Jarro. Initially, we ha
 # Testing Description
 To begin our testing phase, we connected each component to the Arduino and developed the control code, with assistance from ChatGPT, to automate the entire process.
 
-## Stepper Motor Linear Rail
+### Stepper Motor Linear Rail
 We connected the 4-wire stepper motor linear rail and wrote code to move it fully down and back up. This required fine-tuning the steps_per_move value to achieve consistent and accurate motion.
 
-## Servo Motors
+### Servo Motors
 We used two servo motors from the SparkFun kit, testing various rotation angles based on their specific tasks:
 
 - One servo was hot glued to the top of the frother, with 90 degrees of rotation calibrated to press the frother's power button.
 
 - The second servo was zip-tied to the vertical wooden support, with a hot-glued attachment to the mixing cup. We determined that rotating 120 degrees would effectively tilt the cup and pour the cold foam into the mug.
 
-## Submersible Pump
+### Submersible Pump
 We tested the pump using water, experimenting with different heights for the container holding the liquid. The elevation affected flow rate, so we adjusted both the container height (eventually placing it just below the tube outlet) and the pump's run time to avoid overfilling or splashing during frothing.
 
-## Reflectance Sensor
+### Reflectance Sensor
 The reflectance sensor was tested using the serial monitor to record its baseline value and the value when a mug was placed on top. We selected a setpoint between those readings to reliably trigger the system when a mug is detected.
 
-## Final Assembly & Full System Test
+### Final Assembly & Full System Test
 Once all individual components were calibrated, we assembled the complete system and ran tests to ensure the entire sequence operated smoothly and reliably.
 
 
 # Test Results Discussion
 Throughout development, we encountered several challenges that required creative problem-solving:
 
-## Frother Activation Issue
+### Frother Activation Issue
 Initially, the servo motor did not apply enough force to press the frother's power button. With guidance from Dr. Jarro, we disassembled the frother and removed a spring inside, significantly reducing the required force and allowing the servo to activate it reliably.
 
-## Cup Stability Problem
+### Cup Stability Problem
 During testing, the weight of the liquid caused the mixing cup to detach from the servo. To resolve this, we reinforced the attachment by wrapping the cup with zip ties and securing the servo arm underneath. We also added hot glue to stabilize the connection and ensure reliable tilting during pouring.
 
-## Power Distribution Failure
+### Power Distribution Failure
 When the pump was added to the system, the entire setup failed due to insufficient power distribution. To address this, we integrated a 4-channel output module rack to separate the control and power circuits.
 
 - Instead of the Arduino supplying power directly to the pump, it now sends a low-power signal to an opto-isolator on the module, which switches the pump on and off.
@@ -118,11 +118,11 @@ When the pump was added to the system, the entire setup failed due to insufficie
 - This solution provided more consistent power to the pump and improved overall system stability.
 
 # Test Results
-## System Functionality
+### System Functionality
 When a mug is placed over the reflectance sensor, the system is activated. First, the pump turns on and pumps the cream and syrup mixture into the mixing cup for 5 seconds. Next, the stepper motor linear rail lowers the frother into the cup. Once the frother reaches the bottom, a servo motor mounted on top of it activates after a short delay, pressing the frother's power button and running it for 10 seconds to create a cold foam consistency. Finally, another servo motor rotates the mixing cup over the mug, allowing the cold foam to pour onto the coffee, then returns the cup to its original position.
 
-## Mechanical Limitations
+### Mechanical Limitations
 After repeated use over several days, the plastic mount on the stepper motor linear rail began to wear down due to the weight of the frother. The friction between the rail’s metal components and the plastic attachment caused gradual degradation, eventually preventing the actuator from fully lifting the frother without additional support from below.
 
-## Design Enhancements
+### Design Enhancements
 This issue could be addressed by upgrading to more durable, higher quality components such as metal mounts or a more robust linear actuator to better handle the mechanical stress and extend the system's lifespan.
