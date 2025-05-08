@@ -62,11 +62,11 @@ Assembly began with the wooden base described in the previous "Frame" section. W
 
 ### Frame
 
-We initially considered using perforated metal sheets and rods to assemble the frame. After a discussion with Dr. Jarros, he informed us that this would be quite expensive and heavy, and recommended we use wood instead. By using wood, we were able to use pieces from former 305 projects and receive great assistance from Dr. Jarros. It was easy to size exactly what we needed by sawing pieces and simply drilling them together. The cupholder plate was from a previous project and already had a hole in it, so it was perfect and easy to integrate. We added the extra piece of wood to the top of the post because the frother needed to sit farther away from the post to lower into the cup properly. 
+We initially considered using perforated metal sheets and rods to assemble the frame. After a discussion with Dr. Jarro, he informed us that this would be quite expensive and heavy, and recommended we use wood instead. By using wood, we were able to use pieces from former 305 projects and receive great assistance from Dr. Jarro. It was easy to size exactly what we needed by sawing pieces and simply drilling them together. The cupholder plate was from a previous project and already had a hole in it, so it was perfect and easy to integrate. We added the extra piece of wood to the top of the post because the frother needed to sit farther away from the post to lower into the cup properly. 
 
 ### Frother
 
-The frother needed an easily pressed top button. At first, the servo wasn't strong enough to push the button and power the frother. Dr. Jarros helped us take it apart, and we ended up removing the spring that was giving resistance to the button. By removing the spring, the servo was able to turn the frother on. Looking at servo specifics, we decided to attach the servo to the frother itself, rather than at the top of the rail. Using hot glue was effective and ensured the servo would never miss the button.
+The frother needed an easily pressed top button. At first, the servo wasn't strong enough to push the button and power the frother. Dr. Jarro helped us take it apart, and we ended up removing the spring that was giving resistance to the button. By removing the spring, the servo was able to turn the frother on. Looking at servo specifics, we decided to attach the servo to the frother itself, rather than at the top of the rail. Using hot glue was effective and ensured the servo would never miss the button.
 
 ### Pump
 
@@ -74,7 +74,7 @@ Our first choice for a pump was a peristaltic pump, but we wouldn't have gotten 
 
 ### Sensor
 
-An analog reflectance sensor was also recommended by Dr. Jarros. Initially, we had the idea of using some kind of weight-activated system, like a pressure sensor pad. There were already some reflectance sensors in the lab, so it was an economical decision to use what was available instead of purchasing something new. 
+An analog reflectance sensor was also recommended by Dr. Jarro. Initially, we had the idea of using some kind of weight-activated system, like a pressure sensor pad. There were already some reflectance sensors in the lab, so it was an economical decision to use what was available instead of purchasing something new. 
 
 # Testing Description
 ## System Functionality
