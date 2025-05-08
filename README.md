@@ -70,7 +70,6 @@ Circuit Components and Configuration:
 
 ![Frame](https://github.com/audreysuit/Final-Project/blob/main/Foamtastic%20Circuit.jpg)
 
-Add description of wiring and parts, photos of the circuit, and potentially schematics.
 
 ### Code
 
@@ -124,7 +123,6 @@ The reflectance sensor was tested using the serial monitor to record its baselin
 
 ### Final Assembly & Full System Test
 Once all individual components were calibrated, we assembled the complete system and ran tests to ensure the entire sequence operated smoothly and reliably.
-
 
 # Test Results Discussion
 Throughout development, we encountered several challenges that required creative problem-solving:
