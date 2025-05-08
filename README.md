@@ -86,5 +86,6 @@ After repeated use over several days, the plastic mount on the stepper motor lin
 ## Design Enhancements
 This issue could be addressed by upgrading to more durable, higher quality components such as metal mounts or a more robust linear actuator to better handle the mechanical stress and extend the system's lifespan.
 
+# Test Results Discussion
 
 # Test Results
